@@ -1,0 +1,15 @@
+node_modules/
+build/
+*.js.map
+
+# Runtime artifacts
+audit.jsonl
+
+# Internal governance (not for public repo)
+CONTEXT.md
+BUILD.md
+LOG.md
+
+# OS
+Thumbs.db
+Desktop.ini

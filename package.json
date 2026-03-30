@@ -1,0 +1,38 @@
+{
+  "name": "windows-computer-use",
+  "version": "0.1.0",
+  "description": "Windows desktop-control backend for Claude Code. MCP server exposing screenshot capture, mouse/keyboard automation, and window management via Win32 APIs.",
+  "type": "module",
+  "bin": {
+    "windows-computer-use": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "clean": "rimraf build",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "koffi": "^2.9.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "mcp",
+    "computer-use",
+    "windows",
+    "automation",
+    "desktop-control"
+  ]
+}
